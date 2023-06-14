@@ -1,0 +1,200 @@
+/*Variables*/
+$colorP: red;
+
+
+@font-face {
+    font-family: 'JostRegular';
+    src: url('./fonts/Jost-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: url('./fonts/Muli.ttf') format('truetype');
+}
+
+
+/*Font h1*/ 
+body{
+    font-family: 'JostRegular', sans-serif;
+}
+
+/*Font p*/
+p{
+    font-family: 'Muli', sans-serif;
+}
+
+
+
+/*Navbar*/
+.header{
+    position:fixed;
+    z-index:1;
+    .imageNavbar{
+        color: #ffffff;
+        width: 8rem;
+    }
+    .navButton{
+        border: none;
+        text-decoration: none;
+        padding: 5%;
+        width: 200px;
+        background-color: #0000ff;
+        color: #ffffff; 
+        margin-right: 25%;
+        &:hover{
+            transition: 0.4s linear;
+            background-color: darken($color: #2a3cb7, $amount: 10%);
+        }
+    }
+}
+
+
+/*VideoAndSection*/
+.videoAndSection{
+    position: relative;
+    .sectionVideo{
+        position: absolute;
+        top: 40%;
+        z-index: 5;
+        color: white;
+        .paragraphVideo{
+            color: #ffffff;
+
+        }
+        .h1Video{
+            font-size:4rem;
+        }
+    }
+    .buttonSectionVideo{
+        border: none;
+        padding: 1%;
+        border-radius: 10px;
+        margin-top: 2%;
+        width: 10rem;
+        background-color: #0000ff;
+        color: #ffffff;
+        &:hover{
+            transition: 0.4s linear;
+            background-color: darken($color: #2a3cb7, $amount: 10%);
+        } 
+    }
+}
+
+
+/*Section center*/
+.paragraphFirstCenter{
+    font-size: 70%;
+    color: $colorP;
+}
+.paragraphSecondCenter{
+    font-size: 70%;    
+}
+.buttonCenterDropdown{
+    font-size: 1.5rem;
+}
+
+
+/*Modal button*/
+.conferenceImg{ 
+    background-image:url('./conference_room.jpg');
+    background-repeat:none;
+    background-size:cover;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    .conferenceButton{
+        font-size: 20px;
+        color: #ffffff;
+        background-color: #2a3cb7 ;
+        height: 10rem;
+        width: 10rem;
+        border-radius: 100%;
+        &:hover{
+            transition: 0.4s linear;
+            transform: scale(1.5, 1.5);
+            background-color: darken($color: #0000ff, $amount: 10%);
+        }
+    }
+}
+
+/*Section Third*/
+.sectionThird{
+    color: #ffffff;
+    .containerThird{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        margin-left: 8rem;
+        margin-right: 8rem;
+        .paragraphThird{
+            color: $colorP;
+            font-size: smaller;
+        }
+    }
+    .buttonThird{
+        border: none;
+        padding: 3%;
+        border-radius: 10px;
+
+        width: 10rem;
+        background-color: #0000ff;
+        color: #ffffff;
+        &:hover{
+            transition: 0.4s linear;
+            background-color: darken($color: #2a3cb7, $amount: 10%);
+        } 
+    }
+}
+
+
+
+
+
+.buttonArticle{
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 1%;
+    border-radius: 1%;
+    margin-top: 5%;
+    width: 15%;
+    background-color: #0000ff;
+    color: #ffffff; 
+}
+   
+
+.sectionFourth{
+    width: 40rem;
+}
+
+
+/*Section Fourth*/
+.animationCards{
+    &:hover{
+        transition: 0.3s linear;
+        transform: rotate(2.4deg) scale(1.1 , 1.1);
+    }
+}
+
+/*Images*/
+.animationImages{
+    opacity: 0.8;
+    &:hover{
+        transition: 0.4s linear;
+        opacity: 1;
+    }
+}
+
+
+
+
+@media screen and (max-width:992px) {
+    .navButton{
+        display: none;
+    }
+}
+
+
+
+  
